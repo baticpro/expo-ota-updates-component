@@ -1,11 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {UpdatesChecker} from "./src/expo-ota-update-checker";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <UpdatesChecker>
+      <View style={styles.container}>
+        <Text>Open up App.js to start working on your app!</Text>
+      </View>
+    </UpdatesChecker>
   );
 }
 
